@@ -27,5 +27,8 @@ class MainActivity : AppCompatActivity() {
         viewModel.getNumber.observe(this, Observer { counter ->
             binding.tvCount.text = counter.toString()
         })
+
+        // Other Way to handle the Value
+//        binding.tvCount.text = viewModel.getResulty().toString()
     }
 }

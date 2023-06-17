@@ -12,4 +12,9 @@ class MainViewModel: ViewModel() {
     fun incerement(){
         _getNumber.postValue(counter++)
     }
+    // Other Way to handle the Value
+
+    /*fun getResulty(): Int{
+        return getNumber.value!!.toInt()
+    }*/
 }
